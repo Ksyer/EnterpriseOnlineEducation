@@ -1,0 +1,578 @@
+/**
+ * CSS by WangYaoHua
+ * 2020-06-23
+ */
+
+/**
+ * 整体样式
+ */
+
+body {
+    background-color: #f6f6f6;
+}
+
+ /**
+  * banner
+  */
+
+.focus {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 385px;
+}
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 30px;
+    height: 60px;
+    background: rgba(0, 0, 0, .3);
+    line-height: 40px;
+    text-align: center;  
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.arrow-l {
+  left: 165px;
+}
+
+.arrow-r {
+    right: 165px;
+}
+
+.focus:hover .arrow-l,
+.focus:hover .arrow-r {
+    display: block;
+}
+
+.ctrl-l,
+.ctrl-r {
+    font-family: 'icomoon';
+    font-size: 60px;
+    color: #ccc;
+    line-height: 60px;
+    margin-left: -15px;
+}
+
+.ctrl-l::before {
+    content: '\e902';
+}
+
+.ctrl-r::before {
+    content: '\e903';
+}
+
+.ctrl-l:hover,
+.ctrl-r:hover {
+   color: #fff;
+}
+
+.circle {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 2;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle .current {
+    background-color: #ccc;
+}
+
+.circle .current:hover {
+    background-color: #fff;
+}
+
+.focus .bd li {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.focus .bd a {
+    width: 100%;
+    height: 385px;
+    display: block;
+    overflow: hidden;
+}
+
+/**
+ * other-nav
+ */
+
+.other-nav {
+    padding: 10px 0;
+    height: 102px;
+    padding-left: 1px;
+}
+
+.other-nav-l {
+    float: left;
+    width: 250px;
+    height: 100%; 
+   
+}
+
+.other-nav-l li {
+    float: left;
+    overflow: hidden;
+    width: 124px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.other-nav-l a {
+    display: block;
+    height: 100%;
+    line-height: 50px;
+    padding-left: 50px;
+    font-weight: 700;
+}
+
+.other-nav-l li:nth-child(1) {
+    border-top-left-radius: 5px;
+}
+
+.other-nav-l li:nth-child(3) {
+    border-bottom-left-radius: 5px;
+}
+
+.other-nav-l li:nth-child(2) {
+    border-top-right-radius: 5px;
+}
+
+.other-nav-l li:nth-child(4) {
+    border-bottom-right-radius: 5px;
+}
+
+.other-nav-l li:nth-child(1) a {
+    background: url(../img/pic_new/guide2.jpg) no-repeat 18% 50%;
+}
+
+.other-nav-l li:nth-child(2) a {
+    background: url(../img/pic_new/guide3.jpg) no-repeat 18% 50%;
+}
+
+.other-nav-l li:nth-child(3) a {
+    background: url(../img/pic_new/guide1.jpg) no-repeat 18% 50%;
+}
+
+.other-nav-l li:nth-child(4) a {
+    background: url(../img/pic_new/guide4.jpg) no-repeat 18% 50%;
+}
+
+.other-nav-r {
+    float: right;
+    width: 950px;
+    height: 102px;
+    
+}
+
+.other-nav-r li {
+    float: left;
+    width: 227px;
+    height: 102px;
+    background-color: #fff;
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.other-nav-r a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.other-nav-r li:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 4px inset;
+}
+
+.other-nav-r li:nth-child(1) a {
+   background: url(../img/pic_new/icon_fh.png) no-repeat 5% 50%;
+}
+
+.other-nav-r li:nth-child(2) a {
+    background: url(../img/pic_new/icon_jy.png) no-repeat 10% 50%;
+}
+
+.other-nav-r li:nth-child(3) a {
+    background: url(../img/pic_new/icon_hp.png) no-repeat 5% 50%;
+}
+
+.other-nav-r li:nth-child(4) a {
+    background: url(../img/pic_new/icon_xz.png) no-repeat 5% 50%;
+}
+
+.other-nav-r p {
+    padding: 25px  0 10px 75px;
+    line-height: 24px;
+    text-align: left;
+}
+.other-nav-r p b {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.other-nav-r p span {
+    font-size: 12px;
+    color: #999;
+}
+
+/**
+ *  认识江海韵从这里开始
+ */
+
+ .box-know {
+     height: 500px;
+     margin-top: 45px;
+ }
+
+ .box-hd {
+     width: 100%;
+     text-align: center;
+ }
+
+ .box-hd h2 {
+     font-size: 30px;
+     font-weight: normal;
+     padding-bottom: 10px;
+ }
+
+ .box-hd p {
+     font-size: 18px;
+     color: #826363;
+     line-height: 30px;
+ }
+
+.konw-con {
+    margin-top: 30px;
+    width: 100%;
+} 
+
+.know-con-l {
+     float: left;
+     background-color: #fff;
+}
+
+.know-con-l .player-con {
+    float: left;
+    position: relative;
+    width: 580px;
+    height: 360px;
+    border: 1px  solid #ededed;
+}
+
+.know-con-l .player {
+    display: none;
+    overflow: hidden;
+}
+
+.know-con-l .player img {
+    width: 100%;
+}
+
+.know-con-l .player p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    padding-left: 5px 0;
+    text-align: center;
+}
+
+.know-con-l .tag {
+    float: left;
+    margin-left: 15px;
+    width: 154px;
+    height: 360px;
+}
+
+.know-con-l .tag ul li {
+    position: relative;
+}
+
+.know-con-l .tag ul li+li {
+    margin-top: 6px;
+}
+
+.know-con-l .tag ul li div {
+    overflow: hidden;
+}
+
+.know-con-l .tag ul li img {
+    width: 154px;
+    height: 86px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.know-con-l .tag ul li:hover img {
+    transform: scale(1.1);
+}
+
+.know-con-l .tag ul li span {
+    position: absolute;
+    display: none;
+    left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 17px;
+    background: url(../img/pic_new/arrow_l.jpg) no-repeat;
+}
+
+.know-con-r {
+    float: right;
+    position: relative;
+    width: 435px;
+    height: 360px;
+    border: 1px solid #ededed;
+    background-color: #fff;
+}
+
+.news-title {
+    margin: 12px 15px;
+    font-size: 20px;
+    color: #545e64;
+    font-weight: 700;
+    margin-left: 23px;
+    position: relative;
+}
+
+.news-title i {
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.news-title a {
+    display: block;
+    position: absolute;
+    right: -16px;
+    top: -11px;
+    width: 37px;
+    height: 38px;
+    background: url(../img/pic_new/jia.png) no-repeat;
+}
+
+.news-con {
+    padding: 0 10px;
+}
+
+.news-con ul li {
+    padding: 7px 0;
+    font-size: 14px;
+}
+
+.news-con .zx {
+    background-color: #eee;
+}
+
+.news-con .zx i {
+    background-color: #e81740;
+    padding: 7px;
+    color: #fff;
+    margin-right: 10px;
+    position: relative;
+}
+
+.news-con .zx i::after {
+    display: block;
+    content: "";
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #e81740;
+    position: absolute;
+    bottom: 0;
+    right: -16px;
+    transform: translateY(-28%);
+}
+
+.news-con li:nth-child(2) {
+    margin-top: 5px;
+}
+
+.news-con li:nth-child(n+2)::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: url(../img//pic_new/icon_b.png) no-repeat;
+}
+
+/**
+ * 期待被超越：课程为学员成长持续赋能
+ */
+
+.box-couse {
+    margin-top: 50px;
+} 
+
+.couse-con {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.couse-title {
+    margin: 20px 0;
+}
+
+.couse-title span {
+    line-height: 40px;
+    font-size: 24px;
+    color: #555;
+    padding-left: 33px;
+    background: url(../img/pic_new/xuexi.png) no-repeat;
+}
+
+.couse-desc {
+    width: 100%;
+    height: 238px;
+}
+
+.couse-desc li {
+    position: relative;
+    float: left;
+    width: 285px;
+    height: 235px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.couse-desc li:hover {
+    border: 1px solid #e81740;
+}
+
+.couse-desc li+li {
+    margin-left: 10px;
+}
+
+.couse-desc li a {
+    display: block;
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    overflow: hidden;
+}
+.couse-desc li a img {
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+.couse-desc li a:hover img{
+    transform: scale(1.1);
+}
+
+.couse-desc li a span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    line-height: 24px;
+    /* color: #333; */
+    text-align: left;
+    font-size: 14px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+/**
+ * 你的专业导师
+ */
+
+.box-tuttor {
+    margin-top: 50px;
+}
+
+.tuttor-con {
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.tuttor-con img {
+    display: block;
+}
+
+.tuttor-con a {
+    display: block;
+    position: absolute;
+    width: 111px;
+    height: 140px;
+    left: 50%;
+    margin-left: -48px;
+    top: 50%;
+    margin-top: -78px;
+    transition: all 0.3s;
+}
+
+.tuttor-con a:hover {
+    box-shadow: rgba(0, 0, 0, 0.7) 0 0 4px inset;
+}
+
+/**
+ * 多变的教学，不变的品质
+ */
+
+.box-school {
+    margin-top: 50px;
+}
+
+.school img {
+    display: block;
+    margin: 45px auto;
+}
+
+/**
+ * 友情链接
+ */
+
+.box-links {
+    margin-top: 50px;
+}
+
+.links-con .logos {
+    text-align: center;
+}
+
+.links-con .logos li {
+    display: inline-block;
+    padding: 20px 30px;
+}

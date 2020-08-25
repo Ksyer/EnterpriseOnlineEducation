@@ -1,0 +1,512 @@
+/**
+ * CSS for WangYaoHua
+ * 2020-06-23
+ */
+
+/**
+ *  topbar
+ */
+ 
+ .topbar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 60px;
+    margin-top: -150px;
+    z-index: 4;
+ }
+
+.topbar li {
+    position: relative;
+    width: 58px;
+    height: 58px;
+    border: 1px solid #E0E0E0;
+    margin-bottom: -1px;
+    background-color: #fff;
+ }
+
+ .topbar li:hover {
+    background-color: #E60012;
+    border-color: #E60012;
+ }
+
+.topbar li a {
+    display: block;
+    width: 58px;
+    height: 58px;
+    overflow: hidden;
+}
+
+.topbar i {
+    display: block;
+    font-family: "icomoon";
+    font-size: 24px;
+    text-align: center;
+    margin: 6px 5px;
+    color: #d72502;
+}
+
+.topbar li:nth-child(1) i::before {
+    content: "\e904";
+}
+
+.topbar li:nth-child(2) i::before {
+    content: "\e914";
+}
+
+.topbar li:nth-child(3) i::before {
+    content: "\e901";
+}
+
+.topbar li:nth-child(4) i::before {
+    content: "\e900";
+}
+
+.topbar li:nth-child(5) i::before {
+    content: "\ea32";
+}
+
+
+.topbar li p {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.topbar li:hover i,
+.topbar li:hover p {
+     color: #fff;
+}
+
+.topbar .box-mobile,
+.topbar .box-weixin {
+    display: none;
+    position: absolute;
+    right: 70px;
+    top: 8px;
+    width: 183px;
+    min-height: 30px;
+    background: #d72502;
+    padding: 7px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.topbar .box-mobile::after,
+.topbar .box-weixin::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -8px;  
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid#d72502;
+}
+
+.topbar .box-mobile p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.topbar .box-weixin img {
+    width: 150px;
+    height: 150px;
+}
+
+ /**
+ * header导航
+ */
+
+.header {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+
+.header-up {
+    height: 70px;
+    margin-top: 15px;
+}
+
+.top-left {
+    position: relative;
+    width: 180px;
+    height: 70px;
+}
+
+.top-left::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 6px;
+    width: 3px;
+    height: 64px;
+    background: url(../img/pic_new/line.png) no-repeat center;
+}
+
+.top-right {
+    margin-left: 35px;
+    width: 547px;
+    height: 100%;
+    background: url(../img/pic_new/slogan.png) no-repeat center;
+
+}
+
+.top-last {
+    position: relative;
+    line-height: 70px;
+    padding-left: 35px;
+    cursor: pointer;
+    background: url(../img/pic_new/city_m.jpg) no-repeat left center;
+    font-family: 'icomoon';
+    font-size: 24px;
+}
+
+.top-last h3 {
+    float: left;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.top-last::after {
+    content: "\ea50";
+    position: absolute;
+    right: 20px;
+    top: 3px;
+    padding-left: 10px;
+    color: #ccc;
+}
+
+.location {
+    display: none;
+    position: absolute;
+    right: 22px;
+    top:  60px;
+    width: 600px;
+    z-index: 2;
+}
+
+.top-last:hover .location{
+    display: block;
+}
+
+.location ul {
+    padding: 0 0 20px 20px;
+    width: 600px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+}
+
+.location ul li {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+.imgbox {
+    display: block;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    bottom: 23px;
+}
+
+.s_name {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #e9e9e9;
+    width: 100px;
+    line-height: 23px;
+    color: #333;
+    font-size: 16px;
+    text-align: center;   
+}
+
+.location ul li a:hover .s_name {
+    color: #fff;
+    background-color: #d72502;
+}
+
+/**
+ * nav导航
+ */
+
+ .nav {
+    margin-top: 10px;;
+    height: 45px;
+}
+
+.dropdown {
+    position: relative;
+    width: 250px;
+    height: 45px;
+}
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    background-color: #b1191a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+/* 
+.dropdown .dd {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 209px;
+    height: 400px;
+    background-color: #c81623;
+    margin-top: 2px;
+    z-index: 2;
+}
+
+.dropdown:hover .dd {
+    display: block;
+}
+
+.dropdown .dd .item {
+    margin-left: 1px;
+    padding:0 10px;
+    height: 31px;
+    line-height: 31px;
+}
+
+.dropdown .dd .item:hover {
+    background-color: #fff;
+}
+
+.dropdown .dd .item:hover a {
+    color: #c81623;
+}
+
+.dropdown .dd .item a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.dropdown .dd .item i {
+    float: right;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+}
+
+.dropdown .dd .item i::before {
+    content: '\ea50';
+} */
+
+.navitems {
+    margin-left: 10px;
+}
+
+.navitems li {
+    float: left;
+}
+
+.navitems li a {
+    display: block;
+    padding: 0 25px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+/**
+ * fdnav导航
+ */
+
+ .fdnav {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    width: 100%;
+    height: 125px;
+    background: rgba(255,255,255,0.9);
+    z-index: 3;
+}
+
+.fdnav li {
+    float: left;
+    width: 299px;
+    height: 125px;
+}
+
+.fdnav li+li {
+    border-left: 1px solid #ccc;
+}
+
+.fdnav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.fdnav li:nth-child(1) a {
+    background: url(../img/indexIcon/h5.png) no-repeat center 15px;
+}
+
+.fdnav li:nth-child(2) a {
+    background: url(../img/indexIcon/bigdata.png) no-repeat center 15px;
+}
+
+.fdnav li:nth-child(3) a {
+    background: url(../img/indexIcon/linux.png) no-repeat center 15px;
+}
+
+.fdnav li:nth-child(4) a {
+    background: url(../img/indexIcon/java.png) no-repeat center 15px;
+}
+
+.fdnav li p{
+    text-align: center;
+    padding-top: 90px;
+}
+
+/**
+ * footer
+ */
+
+ .footer {
+    /* margin-top: 500px; */
+    width: 100%;
+    min-width: 1200px;
+    height: 340px;
+    background-color: #323232;
+}
+
+.mod-service {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #474747;
+}
+
+.mod-service ul {
+    padding-left: 120px;
+}
+
+.mod-service ul li {
+    float: left;
+}
+
+.mod-service ul li {
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    padding-left:60px;   
+}
+
+.mod-service ul li:nth-child(1) {
+    background: url(../img/pic_new/bottom-one.gif) left center no-repeat;
+}
+
+.mod-service ul li:nth-child(2) {
+    background: url(../img/pic_new/bottom-two.gif) left center no-repeat;
+}
+
+.mod-service ul li:nth-child(3) {
+    background: url(../img/pic_new/bottom-three.gif) left center no-repeat;
+}
+
+.mod-service ul li a {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.mod-service ul li a:hover {
+    color: #fff;
+}
+
+.mod-help {
+    margin: 0 auto;
+    width: 1100px;
+    height: 148px;
+    padding: 25px 0;
+}
+
+.mod-help dl {
+    float: left;  
+}
+
+.mod-help dl:nth-child(-n+3) {
+    width: 180px;
+    background: url(../img/pic_new/bottombg.gif) 120px 10px no-repeat;
+}
+
+.mod-help dl:nth-child(-n+4) dt {
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 17px;
+}
+
+.mod-help dl:nth-child(-n+4) dd,
+.mod-help dl dd a {
+    height: 30px;
+    line-height: 35px;
+    color: #ccc;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.mod-help dl dd a:hover {
+    color: #fff;
+}
+
+.mod-help dl:nth-child(5) {
+   float: right;
+}
+
+.mod-help dl:nth-child(5) dd img {
+   width: 100px;
+   height: 100px;
+}
+
+.mod-help dl:nth-child(5) dd p {
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.mod-copyright {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #2a2a2a;
+    color: #ccc;
+    font-family: "Microsoft Yahei";
+    font-size: 12px;
+}
+
+.mod-copyright a:first-child {
+    font-size: 12px;
+    color: #ccc;
+    padding: 0 10px;
+}
+
+.mod-copyright :nth-child(5) img {
+    width: 40px;
+}
+

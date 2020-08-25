@@ -1,0 +1,192 @@
+/**
+ * CSS by WangYaoHua
+ * 2020-06-26
+ */
+
+/**
+ * nav-wrap
+ */
+
+.nav-wrap {
+    width: 100%;
+    height: 70px;
+    background: rgba(0,0,0,.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.nav {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 15px;
+}
+
+.nav h2 {
+    float: left;
+}
+
+.nav h2 img {
+    display: block;
+    height: 40px;
+}
+
+.nav ul {
+    float: right;
+    margin-left: 35px;
+}
+
+.nav ul li {
+    float: left;
+    width: 105px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.nav ul li a {
+    font-size: 16px;
+    color: #fff;
+    opacity: .8;
+}
+
+.nav ul li.cur a {
+    color: #d50212;
+    font-weight: bold;
+}
+
+/**
+ * fullPage
+ */
+
+#fp-nav.right {
+    right: 72px !important;
+}
+
+#fp-nav ul li a span {
+    border: 1px solid #ccc !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+#fp-nav ul li a.active span {
+    background: #fff !important;
+}
+
+.page1 {
+    background: url(../img/pic_new/sec1bg.jpg) 50%;
+}
+
+.page2 {
+    background: url(../img/pic_new/sec2bg.jpg) 50%;
+}
+
+.page3 {
+    background: url(../img/pic_new/sec3bg.jpg) 50%;
+}
+
+.page4 {
+    background: url(../img/pic_new/sec4bg.jpg) 50%;
+}
+
+.page5 {
+    background: url(../img/pic_new/sec5bg.jpg) 50%;
+}
+
+.page6 {
+    background: url(../img/pic_new/sec6bg.jpg) 50%;
+}
+
+/* 海韵简介 */
+
+.sec-inner {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -600px;
+    height: 100%;
+}
+
+.sec-inner .sec-bd {
+    position: absolute;
+    top: 20%;
+    left: 400px;
+    width: 710px;
+    /* height: 400px; */
+}
+
+.sec-bd h2 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+    height: 100px;
+    line-height: 100px;
+}
+
+.sec-bd h2 span {
+    padding: 0 8px 0 52px;
+    margin-right: 10px;
+    color: #01eae8;
+    display: inline-block;
+    height: 100%;
+    border: 1px #fff solid;
+}
+
+.sec-bd .secbd-con {
+    width: 100%;
+    background: rgba(7,0,12,.7);
+    /* height: 180px; */
+    padding: 44px 0 350px;
+}
+
+.secbd-con p {
+    position: absolute;
+    left: 0;
+    width: 666px;
+    font-size: 16px;
+    line-height: 34px;
+    color: #fff;
+}
+
+/* 对外合作 */
+
+.secs-con {
+    text-align: center;
+}
+
+.secs-con h2 {
+    display: inline-block;
+    width: 252px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.secs-con h2 span {
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: #fff;
+    margin: 20px auto 0;
+}
+
+.secs-con p {
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    line-height: 30px;
+    padding: 30px 88px 40px;
+}
+
+.page6 .secs-con h2,
+.page6 .secs-con p {
+    color: #333;
+}
+
+.page6 .secs-con h2 span {
+    background: #333;
+}
+
+.page6 .secs-con p {
+    text-align: center;
+}
